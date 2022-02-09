@@ -1,0 +1,108 @@
+.Input {
+    margin-top: 10px;
+    width: 100%;
+    &__options {
+        background-color: #fff !important;
+        color: #485161;
+        border: 1px solid #fff;
+        &:focus {
+            border: 1px solid rgb(32, 145, 79);
+        }
+        &:focus:-webkit-input {
+            border: 1px solid rgb(32, 145, 79);
+        }
+        &:focus:-moz-input {
+            border: 1px solid rgb(32, 145, 79);
+        }
+        &:focus:-ms-input {
+            border: 1px solid rgb(32, 145, 79);
+        }
+    }
+}
+
+.Button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 46px;
+    &__options {
+        width: 124px;
+    }
+    &__close {
+        width: 100%;
+    }
+}
+
+.Modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+    height: 350px;
+}
+
+.Modal {
+    &-success {
+        background-color: rgba(39, 174, 96, 1);
+        border-radius: 15px;
+    }
+    &-error {
+        background-color: rgba(235, 87, 87, 1);
+        border-radius: 15px;
+    }
+}
+
+.Modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 290px;
+    height: 350px;
+    min-height: 350px;
+    padding: 16px;
+    &_img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &_title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 28px;
+        font-size: 20px;
+        line-height: 26px;
+        width: 100%;
+    }
+    &_text {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.Apply {
+    &__Instagram {
+        height: 100%;
+        margin-top: 20px;
+        &_link {
+            word-wrap: break-word;
+            height: 60px;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 260px;
+            overflow: hidden;
+        }
+        &_close {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+    }
+}

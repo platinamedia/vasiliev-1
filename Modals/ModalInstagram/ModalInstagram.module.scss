@@ -1,0 +1,80 @@
+.InstagramModal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000000;
+    transform: translate(-50%, -50%);
+    box-shadow: 24px;
+    max-width: 350px;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+
+    &__heading {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+
+    &__closeIcon {
+        cursor: pointer;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    &__text {
+        line-height: 20px;
+        font-weight: 400;
+        width: 95%;
+    }
+
+    &__boldText {
+        font-weight: bold;
+    }
+
+    &__usernameInput {
+        width: 95%;
+        margin-top: 5px;
+        border: 1px solid #aaa;
+        background: none;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    &__button {
+        margin-top: 10px;
+        height: 40px;
+    }
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    &__form {
+        margin-top: 10px;
+    }
+}
+
+.CheckBox {
+    &__text {
+        color: rgb(15, 10, 10);
+    }
+    &__item {
+    }
+    &__label {
+        align-items: flex-start;
+    }
+}

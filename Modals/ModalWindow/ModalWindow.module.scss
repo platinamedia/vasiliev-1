@@ -1,0 +1,79 @@
+.ModalWindow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 24px;
+    width: 100%;
+    max-width: 695px;
+    max-height: 565px;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 20px;
+    &__close {
+        cursor: pointer;
+        padding: 32px;
+        padding-top: 22px;
+    }
+    &__position_x {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.VideoWindow {
+    padding: 32px;
+    padding-top: 4px;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        &_head {
+            width: 100%;
+            height: 26px;
+            &_dark {
+                color: #212c42;
+            }
+        }
+        &_video {
+            margin-top: 16px;
+            max-width: 631px;
+            height: 355px;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 959px) {
+
+}
+
+@media screen and (max-width: 650px) {
+    .VideoWindow {
+        padding: 8px;
+        padding-top: 4px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            &_head {
+                width: 100%;
+                height: 26px;
+                &_dark {
+                    color: #212c42;
+                }
+            }
+            &_video {
+                margin-top: 16px;
+                max-width: 631px;
+                height: 355px;
+                width: 100%;
+                border-radius: 16px;
+                overflow: hidden;
+            }
+        }
+    }
+    
+}

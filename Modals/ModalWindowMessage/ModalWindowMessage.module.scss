@@ -1,0 +1,71 @@
+.ModalWindowMessage {
+    &__box {
+        position: absolute;
+        background: #ffffff;
+        border-radius: 20px;
+        width: 361px;
+        height: 406px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400;
+        background: #ffffff;
+        border: 2px solid #000;
+    }
+    &__close {
+        cursor: pointer;
+        padding: 20px;
+        padding-top: 20px;
+    }
+    &__position_x {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
+
+.Message {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    padding-top: 0px;
+    &__head {
+        padding-top: 10px;
+    }
+    &__text {
+        color: #212c42;
+    }
+    &__body {
+        padding-top: 8px;
+    }
+    &__input {
+        padding-top: 24px;
+        &_label {
+            height: 21px;
+            color: #212c42;
+        }
+        &_config {
+            color: #212c42;
+            background-color: #fff !important;
+            &:focus {
+                border: 1px solid #707d96;
+            }
+            &:focus:-webkit-input {
+                border: 1px solid #707d96;
+            }
+            &:focus:-moz-input {
+                border: 1px solid #707d96;
+            }
+            &:focus:-ms-input {
+                border: 1px solid #707d96;
+            }
+        }
+    }
+    &__submit {
+        padding-top: 30px;
+        &_config {
+            width: 176px;
+            height: 36px;
+        }
+    }
+}

@@ -1,0 +1,346 @@
+.ChangeProfile {
+}
+
+.ViewProfile {
+}
+
+
+.ChoiceGender {
+    margin-top: 34px;
+    display: flex;
+    &__item {
+        margin-right: 26px;
+    }
+}
+
+.RadioButton_options {
+    width: 100px;
+}
+
+
+.Button_options {
+    width: 136px;
+    min-width: 136px;
+    height: 36px;
+    padding: 0px;
+}
+
+$bc: #212c42;
+$bc_form: #192233;
+$text_c: #ffffff;
+$text_mini: #6781f7;
+$btn_c: #d752aa;
+$grey_c: #707d96;
+$grey_light_c: #c4c4c4;
+$error_c: rgba(255, 0, 0, 0.8);
+
+.InterestsPicker {
+    width: 100%;
+    max-width: 270px;
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.SettingsProfile {
+    width: 100%;
+    max-width: 701px;
+    min-height: 18px;
+    background-color: rgba(25, 34, 51, 1);
+    border-radius: 0px 0px 20px 20px;
+    padding-top: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 48px;
+    margin-bottom: 100px;
+    &__photo {
+        & img {
+            border-radius: 50px;
+        }
+    }
+    &__first {
+        margin-top: 0px;
+        padding-top: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__changed {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        align-items: center;
+        max-height: 30px;
+        padding: 0 4px;
+    }
+    &__email {
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    &__long {
+        width: 100%;
+        max-width: 266px;
+        height: 40px;
+    }
+    &__area {
+        width: 100%;
+        max-width: 387px;
+        height: 140px;
+    }
+    &__text {
+        width: 100%;
+    }
+    &__mean {
+        width: 100%;
+        max-width: 266px;
+        height: 40px;
+    }
+    &__wee {
+        width: 100%;
+        max-width: 220px;
+        height: 40px;
+    }
+    &__form {
+        width: 100%;
+        &_download {
+            padding: 16px;
+            width: 100%;
+            max-width: 411px;
+            min-height: 109px;
+            border: 1px dashed #8b97ae;
+            box-sizing: border-box;
+            border-radius: 10px;
+        }
+        &_user {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            width: 100%;
+        }
+        &_contacts {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+    &__solo {
+        display: flex;
+        width: 100%;
+        margin-top: 40px;
+        gap: 20px;
+    }
+    &__about {
+        width: 100%;
+        max-width: 242px;
+        &_wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            min-height: 148px;
+            background-color: #212c42;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        &_text {
+            display: flex;
+            color: rgba(112, 125, 150, 1);
+        }
+        &_disabled {
+            display: flex;
+            height: 100px;
+            overflow: hidden;
+            text-align: center;
+        }
+    }
+    &__yourHistory {
+        width: 100%;
+        max-width: 387px;
+        height: 109px;
+    }
+    &__confirm {
+        &_wrapper {
+            cursor: pointer;
+            background-color: rgba(242, 146, 76, 1);
+            border-radius: 4px;
+            width: 100%;
+            max-width: 387px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            &:hover {
+                background-color: rgba(242, 146, 76, 0.9);
+            }
+        }
+        &_btn {
+            height: 30px;
+            min-width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: #fff solid 1px;
+            padding: 12px;
+            border-radius: 6px;
+        }
+        &_text {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    }
+    &__connectInst {
+        &_btn {
+            height: 30px;
+            max-width: 277px;
+        }
+    }
+    &__change {
+        padding-top: 50px;
+        display: flex;
+        gap: 16px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 70px;
+        left: 240px;
+        background-color: #212c42;
+        // padding-top: 50px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        // border: red solid;
+        padding-bottom: 50px;
+        padding-left: 100px;
+        gap: 20px;
+        padding: 0;
+    }
+    &__instagram {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        // justify-content: space-between;
+    }
+    &__InstagramView {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        // max-width: 300px;
+        margin-bottom: 20px;
+        &_prof {
+            overflow: hidden;
+            width: 100%;
+            max-width: 176px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        &_IMG {
+            height: 32px;
+            width: 32px;
+            min-width: 32px;
+            margin-right: 8px;
+            border-radius: 50px;
+            & img {
+                border-radius: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 959px) {
+    .SettingsProfile {
+        margin-bottom: 140px;
+        max-width: none;
+        &__change {
+            margin-left: 0px;
+            position: fixed;
+            z-index: 100000;
+            bottom: 64px;
+            width: 100%;
+            height: 70px;
+            left: 0;
+            background-color: #212c42;
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 50px;
+            gap: 20px;
+            padding: 0;
+        }
+        &__InstagramView {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            // flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .SettingsProfile {
+        padding-left: 18px;
+        padding-right: 18px;
+        &__solo {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            margin-top: 40px;
+            gap: 20px;
+        }
+        &__confirm {
+            &_wrapper {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        &__form {
+            width: 100%;
+        }
+        &__long {
+            width: 100%;
+            max-width: 650px;
+            height: 45px;
+        }
+        &__area {
+            width: 100%;
+            max-width: 650px;
+            height: 140px;
+        }
+        &__mean {
+            width: 100%;
+            max-width: 650px;
+            height: 45px;
+        }
+        &__wee {
+            width: 100%;
+            max-width: 650px;
+            height: 45px;
+        }
+        &__br {
+            display: none;
+        }
+        &__about {
+            width: 100%;
+            max-width: none;
+            height: 100%;
+        }
+        &__connectInst {
+            &_btn {
+                width: 100%;
+                height: 70px;
+                max-width: none;
+            }
+        }
+    }
+}
+
+// InputMask

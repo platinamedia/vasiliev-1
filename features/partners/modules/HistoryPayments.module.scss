@@ -1,0 +1,64 @@
+.HistoryPayments {
+    margin: 38px 0;
+}
+
+.Table {
+    margin-top: 16px;
+    border: 1px solid #707D96;
+    box-sizing: border-box;
+    border-radius: 16px;
+    &__header {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        &_data {
+            padding-left: 14px;
+            max-width: 145px;
+            width: 100%;
+        }
+        &_sum {
+            padding-left: 16px;
+            width: 100%;
+            max-width: 100px;
+
+        }
+        &_status {
+            padding-left: 16px;
+            width: 100%;
+        }
+    }
+    &__body {
+        min-height: 50px;
+    }
+}
+
+.Body {
+    display: flex;
+    border-top: 1px solid #707D96;
+    height: 50px;
+    &__data {
+        overflow: hidden;
+        max-width: 145px;
+        width: 100%;
+        display: flex;
+        padding-left: 14px;
+        align-items: center;
+    }
+    &__sum {
+        border-left: 1px solid #707D96;
+        overflow: hidden;
+        width: 100%;
+        max-width: 100px;
+        display: flex;
+        padding-left: 16px;
+        align-items: center;
+    }
+    &__status {
+        border-left: 1px solid #707D96;
+        overflow: hidden;
+        width: 100%;
+        padding-left: 16px;
+        display: flex;
+        align-items: center;
+    }
+}

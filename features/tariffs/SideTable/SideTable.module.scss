@@ -1,0 +1,19 @@
+$color_blue: #6781f7;
+$color_silver: #8b97ae;
+$color_pinc: #d752aa;
+
+.SideTable {
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 10px;
+        border-bottom: $color_silver solid 1px;
+        height: 52px;
+        &_toggle {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}

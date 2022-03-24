@@ -1,0 +1,159 @@
+.LinearProgress {
+  height: 2px;
+  overflow: hidden;
+}
+
+.Header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  &__level {
+    width: 100%;
+    min-width: 82px;
+    max-width: 82px;
+  }
+  &__progress {
+    width: 100%;
+    min-width: 99px;
+    max-width: 99px;
+  }
+  &__userName {
+    width: 100%;
+    min-width: 148px;
+  }
+  &__tariff {
+    width: 100%;
+    min-width: 87px;
+    max-width: 87px;
+  }
+  &__contacts {
+    width: 100%;
+    min-width: 146px;
+  }
+  &__subscribe {
+    width: 100%;
+    min-width: 122px;
+  }
+  &__many {
+    width: 100%;
+    min-width: 93px;
+  }
+}
+
+.Clients {
+  background-color: var(--background-alt);
+  padding: 30px;
+  border: 1px solid transparent;
+  border-radius: 0 0 20px 20px;
+  max-width: 1200px;
+}
+
+.Table {
+  overflow: hidden;
+  border: 1px solid var(--grey);
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  max-width: 1200px;
+  &__cell {
+    min-height: 49px;
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+  }
+  &__content {
+    border-top: 1px solid var(--grey);
+    min-height: 200px;
+    transition: 1s;
+  }
+  &__List {
+    border-top: 1px solid var(--grey);
+    &:hover {
+      background-color: #212c42;
+    }
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+  .Clients {
+    padding: 8px;
+  }
+  .MiniText {
+    font-size: 12px;
+  }
+  .Header {
+    &__level {
+      min-width: 6px;
+      max-width: 65px;
+    }
+    &__progress {
+      min-width: 60px;
+      max-width: 60px;
+    }
+    &__userName {
+      min-width: 100px;
+    }
+    &__tariff {
+      min-width: 84px;
+      max-width: 84px;
+    }
+    &__contacts {
+      min-width: 90px;
+    }
+    &__subscribe {
+      min-width: 90px;
+    }
+    &__many {
+      min-width: 83px;
+    }
+  }
+  .Table {
+    &__cell {
+      justify-content: flex-start;
+      padding-left: 6px;
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .Clients {
+    padding: 8px;
+    margin-bottom: 100px;
+  }
+  .MiniText {
+    font-size: 12px;
+  }
+
+  .Header {
+    &__level {
+      min-width: 6px;
+      max-width: 65px;
+    }
+    &__progress {
+      display: none;
+    }
+    &__userName {
+      min-width: 100px;
+    }
+    &__tariff {
+      min-width: 84px;
+      max-width: 84px;
+    }
+    &__contacts {
+      display: none;
+    }
+    &__subscribe {
+      display: none;
+    }
+    &__many {
+      display: none;
+    }
+  }
+
+  .Table {
+    &__cell {
+      justify-content: flex-start;
+      padding-left: 6px;
+    }
+  }
+}

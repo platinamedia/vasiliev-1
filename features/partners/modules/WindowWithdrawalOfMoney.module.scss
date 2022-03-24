@@ -1,0 +1,54 @@
+.WindowWithdrawalOfMoney {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.maxBalanceInput {
+    height: 20px;
+    margin-top: 16px;
+}
+
+.Input {
+    &__sumMoney {
+        &_red {
+            color: #eb5757;
+        }
+        max-width: 130px;
+        height: 40px;
+    }
+    &__cardNumber {
+        min-width: 195px;
+        max-width: 195px;
+        height: 40px;
+    }
+}
+
+.Label {
+    &__item {
+        display: flex;
+        margin-top: 8px;
+    }
+}
+
+.Credit {
+    margin-top: 24px;
+}
+
+.Button_post {
+    margin-top: 34px;
+    width: 131px;
+    height: 36px;
+}
+
+
+.CheckBox_section {
+    margin-top: 34px;
+}
+
+.Text__underline {
+    text-decoration: underline;
+}
+
+.Text_hover {
+
+}

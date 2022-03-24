@@ -1,0 +1,66 @@
+.WindowWithdrawalUsers {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.maxBalanceInput {
+    height: 20px;
+    margin-top: 16px;
+}
+
+.Input {
+    &__sumMoneyForUser {
+        max-width: 130px;
+        height: 40px;
+        &_red {
+            color: #eb5757;
+        }
+    }
+    &__email {
+        max-width: 383px;
+        height: 40px;
+        margin-top: 32px;
+    }
+}
+
+.Label {
+    &__item {
+        margin-top: 8px;
+    }
+}
+
+.Button_post {
+    margin-top: 34px;
+    width: 131px;
+    height: 36px;
+}
+
+.CheckTarrifs {
+    max-width: 745px;
+    width: 100%;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #db6a6a;
+    border-radius: 8px;
+    &__content {
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &_btn {
+            cursor: pointer;
+            border: white 1px solid;
+            width: 83px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.158);
+            }
+        }
+    }
+}

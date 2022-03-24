@@ -1,0 +1,32 @@
+.ChangeInstagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &__input {
+        margin-left: 0px;
+        width: 190px;
+        margin-right: 13px;
+        height: 50px;
+    }
+    &__button {
+        height: 50px;
+    }
+}
+
+.Input_options {
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.Button_options {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 36px;
+    padding: 0px;
+    border-radius: 4px;
+    &:hover {
+        border-radius: 4px;
+    }
+}

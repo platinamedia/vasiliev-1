@@ -1,0 +1,20 @@
+.Payments {
+  background-color: var(--background-alt);
+  padding: 30px;
+  min-height: 200px;
+  border-radius: 0px 0px 20px 20px;
+  max-width: 1200px;
+}
+
+.ChoiceWindow {
+  margin-top: 34px;
+  display: flex;
+}
+
+@media screen and (max-width: 650px) {
+  .Payments {
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom: 100px;
+  }
+}

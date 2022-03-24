@@ -1,0 +1,22 @@
+.Text__silver {
+    color: #8b97ae;
+}
+
+.WithdrawalMoney {
+    display: flex;
+    &__head {
+        margin-right: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 650px) {
+    .WithdrawalMoney {
+        flex-direction: column;
+        &__options {
+            margin-top: 10px;
+        }
+    }   
+}
+

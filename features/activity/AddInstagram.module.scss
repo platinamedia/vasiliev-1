@@ -1,0 +1,34 @@
+.AddInstagram {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    &__IMG {
+        margin: 0 auto;
+        margin-top: 100px;
+        max-width: 320px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__body {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_text {
+            display: flex;
+            max-width: 550px;
+            text-align: center;
+        }
+        &_next {
+            margin-top: 30px;
+        }
+    }
+
+}
+
+.Button_options {
+    width: 130px;
+    min-width: 130px;
+    max-width: 130px;
+}

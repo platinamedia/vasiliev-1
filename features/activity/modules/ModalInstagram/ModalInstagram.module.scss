@@ -1,0 +1,87 @@
+.Input_options {
+    width: 305px;
+}
+
+.Text_dark {
+    color: #212c42;
+}
+
+.InstagramModal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1000000;
+    transform: translate(-50%, -50%);
+    box-shadow: 24px;
+    max-width: 350px;
+    width: 90%;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    &__position {
+        height: 100%;
+        margin: 0 auto;
+        background: rgba(33, 44, 66, 0.72);
+        backdrop-filter: blur(10px);
+    }
+    &__input {
+        width: 100%;
+        margin-top: 24px;
+    }
+    &__notice {
+        background-color: #f2994a;
+        width: 305px;
+        height: 48px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        margin-top: 8px;
+        padding: 4px 10px;
+        &_img {
+            margin-right: 11px;
+        }
+    }
+    &__heading {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+    }
+    &__closeIcon {
+        cursor: pointer;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__button {
+        margin-top: 20px;
+    }
+    &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    &__form {
+        margin-top: 10px;
+    }
+}
+
+.Codition__account {
+    text-decoration: underline;
+    color: #6781f7;
+}
+
+.CheckBox {
+    &__text {
+        color: rgb(15, 10, 10);
+    }
+    &__item {
+    }
+    &__label {
+        align-items: flex-start;
+    }
+}

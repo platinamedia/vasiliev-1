@@ -1,0 +1,30 @@
+.Text_blue {
+    cursor: pointer;
+    color: #6781f7;
+}
+
+.Button_options {
+    width: 100%;
+}
+
+.StartSignUp {
+    width: 100%;
+    &__input {
+        margin-top: 27px;
+    }
+    &__button {
+        margin-top: 27px;
+    }
+    &__terms {
+        margin-top: 27px;
+    }
+    &__accept {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__link {
+        margin-top: 5px;
+    }
+}

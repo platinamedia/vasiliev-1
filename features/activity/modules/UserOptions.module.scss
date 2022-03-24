@@ -1,0 +1,37 @@
+.Button_options {
+    border-radius: 4px;
+    padding: 0 20px;
+    display: flex;
+}
+
+.Button_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Options {
+    margin-top: 8px;
+    width: 100%;
+    max-width: 725px;
+    background-color: rgba(25, 34, 51, 1);
+    padding: 16px;
+    padding-top: 2px;
+    border-radius: 8px;
+    &__item {
+        margin-top: 16px;
+        display: flex;
+        &_num {
+            border: 1px solid #ffffff;
+            width: 16px;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 11px;
+        }
+    }
+}

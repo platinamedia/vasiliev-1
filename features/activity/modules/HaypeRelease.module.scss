@@ -1,0 +1,15 @@
+.HaypeRelease {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    &__path {
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .HaypeRelease {
+        margin-bottom: 200px;
+    }
+}

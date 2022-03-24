@@ -1,0 +1,87 @@
+.ListGrid {
+    max-width: 1136px;
+    margin-bottom: 100px;
+    &__container {
+    }
+}
+
+.Cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+    column-gap: 24px;
+}
+
+.Card {
+    background: #6e3dc8;
+    box-shadow: 0px 7px 29px #192233;
+    border-radius: 20px;
+    max-width: 556px;
+    height: 232px;
+    overflow: hidden;
+    &__container {
+        height: 100%;
+        background: url("/images/svg/promo/girl.svg")  no-repeat;
+        background-size: 320px 240px;
+        background-position: 100% -7px;
+        padding: 28px;
+    }
+    &__time {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__text {
+        margin-top: 20px;
+        display: flex;
+        max-width: 390px;
+        padding-right: 80px;
+        height: 100%;
+        max-height: 66px;
+        overflow: hidden;
+    }
+    &__about {
+        margin-top: 10px;
+        display: flex;
+    }
+    &__actual {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+
+.Btn_middle {
+    max-width: 175px;
+    min-width: 175px;
+    padding: 0 20px;
+    max-height: 36px;
+    margin-right: 30px;
+}
+
+@media (min-width: 651px) and (max-width: 1410px) {
+    .Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .Card {
+        min-height: 252px;
+        &__about {
+            flex-direction: column;
+        }
+        &__actual {
+            margin: 10px;
+        }
+        &__container {
+            background-size: 290px 230px;
+            background-position: 100% 30px;
+            padding: 12px;
+        }
+    }
+}

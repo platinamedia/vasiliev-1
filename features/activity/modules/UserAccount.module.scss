@@ -1,0 +1,71 @@
+.UserAccount {
+    margin-bottom: 16px;
+    min-height: 100px;
+}
+
+.Wrapper_instagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 20px;
+    width: 100%;
+}
+
+.Attention {
+    min-width: 250px;
+    max-width: 850px;
+    margin-top: 16px;
+    min-height: 32px;
+    background-color: #f2994a;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 10px;
+    &__messages {
+        margin-left: 11px;
+    }
+}
+
+.Instagram {
+    margin-top: 40px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    &__IMG {
+        height: 50px;
+        width: 32px;
+        min-width: 32px;
+        margin-right: 20px;
+        border-radius: 50px;
+        & img {
+            border-radius: 50px;
+        }
+    }
+    &__text {
+        padding-top: 5px;
+        width: 100%;
+        max-width: 203px;
+        height: 50px;
+        min-height: 32px;
+        overflow: hidden;
+    }
+    &__btn {
+        height: 50px;
+    }
+}
+
+.Button_options {
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 36px;
+}
+
+@media  (max-width: 650px) {
+    .Instagram {
+        align-items: flex-start;
+    }
+}

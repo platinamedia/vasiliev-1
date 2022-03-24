@@ -1,0 +1,213 @@
+.CatchError {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.UserTasks {
+    margin-top: 24px;
+    &__none {
+        display: none;
+    }
+    width: 100%;
+    margin-bottom: 150px;
+    &__Options {
+        margin-top: 0px;
+        max-width: 701px;
+    }
+    &__btn {
+        margin-top: 10px;
+    }
+    &__Cards {
+        min-height: 100px;
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0px, 1fr));
+        row-gap: 24px;
+        column-gap: 24px;
+    }
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        left: 240px;
+        width: 100%;
+        padding-top: 8px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        background-color: #212c42;
+    }
+}
+
+.Card {
+    background-color: #fff;
+    max-width: 266px;
+    min-width: 0px;
+    height: 162px;
+    border-radius: 8px;
+    padding: 16px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    &__wrapper {
+        height: 100%;
+        max-height: 106px;
+        min-height: 106px;
+        overflow: hidden;
+    }
+    &__text {
+        color: rgba(33, 44, 66, 1);
+        &_grey {
+            color: rgba(139, 151, 174, 1);
+        }
+    }
+    &__user {
+        display: flex;
+        gap: 6px;
+        min-height: 40px;
+        max-height: 70px;
+        max-width: 240px;
+        overflow: hidden;
+        &_img {
+            width: 32px;
+            height: 32px;
+            max-width: 32px;
+            min-width: 32px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+    }
+    &__body {
+        margin-top: 0px;
+        min-height: 65px;
+        max-height: 65px;
+        overflow: hidden;
+    }
+    &__buttons {
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        &_wrapper {
+            display: flex;
+            gap: 8px;
+        }
+        &_conf {
+            height: 30px;
+            border-radius: 4px;
+            max-width: 105px;
+            &:hover {
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.Change {
+    cursor: pointer;
+    border: 1px solid #6781f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 88px;
+    height: 30px;
+
+    &__btn {
+        color: #6781f7;
+    }
+}
+
+.Change:hover {
+    .Change__btn {
+        color: #d752aa;
+    }
+    border: 1px solid #d752aa;
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .UserTasks__Cards {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 24px;
+        column-gap: 24px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .UserTasks__Cards {
+        grid-template-columns: repeat(2, minmax(266px, 1fr));
+        row-gap: 24px;
+        column-gap: 24px;
+    }
+    .Card {
+        max-width: none;
+        min-width: none;
+        margin: 10px;
+    }
+}
+@media (min-width: 651px) and (max-width: 959px) {
+    .UserTasks {
+        &__Cards {
+            margin: 0 auto;
+            grid-template-columns: repeat(2, minmax(266px, 1fr));
+            row-gap: 24px;
+            column-gap: 24px;
+        }
+        &__footer {
+            left: 0;
+            bottom: 60px;
+            padding: 20px;
+        }
+
+    }
+    .Card {
+        max-width: none;
+        min-width: none;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 341px) and (max-width: 650px) {
+    .UserTasks {
+        margin-bottom: 300px;
+        &__Cards {
+            margin: 0 auto;
+            grid-template-columns: repeat(1, minmax(266px, 1fr));
+            row-gap: 24px;
+            column-gap: 24px;
+        }
+        &__footer {
+            left: 0;
+            bottom: 60px;
+            padding: 12px;
+        }
+    }
+    .Card {
+        max-width: none;
+        min-width: none;
+        margin: 10px;
+    }
+}
+@media (max-width: 340px) {
+    .UserTasks {
+        margin-bottom: 300px;
+        &__Cards {
+            grid-template-columns: repeat(1, minmax(266px, 1fr));
+            row-gap: 24px;
+            column-gap: 24px;
+        }
+        &__footer {
+            left: 0;
+            bottom: 60px;
+            padding: 20px;
+        }
+    }
+
+    .Card {
+        max-width: none;
+        min-width: none;
+        margin: 10px;
+    }
+}

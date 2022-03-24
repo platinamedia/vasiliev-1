@@ -1,0 +1,256 @@
+.Social {
+    margin-top: 10px;
+    display: flex;
+    &__item {
+        display: flex;
+        margin-top: 5px;
+        margin-right: 6px;
+        align-items: center;
+        gap: 10px;
+        &_hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.Table {
+    &__cell {
+        min-height: 49px;
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__List {
+        border-top: 1px solid var(--grey);
+    }
+}
+
+.Lavel {
+    width: 45px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    background-color: rgba(33, 44, 66, 1);
+    &:hover {
+        transition: 0.1s;
+        background-color: rgba(33, 44, 66, 1);
+    }
+}
+
+.User {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    height: 107px;
+    &:hover {
+        background-color: #212c42;
+    }
+    &__level {
+        cursor: pointer;
+        width: 100%;
+        min-width: 82px;
+        max-width: 82px;
+    }
+    &__progress {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+        max-width: 99px;
+        min-width: 99px;
+    }
+    &__userName {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+        min-width: 148px;
+    }
+    &__userId {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        height: 20px;
+        &_conf {
+            color: rgba(139, 151, 174, 1);
+        }
+    }
+    &__tariff {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+        min-width: 87px;
+        max-width: 87px;
+    }
+    &__contacts {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+    }
+    &__subscribe {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+        min-width: 122px;
+    }
+    &__many {
+        overflow: hidden;
+        border-left: 1px solid var(--grey);
+        width: 100%;
+        min-width: 93px;
+    }
+    &__info {
+        &_conf {
+            color: #707d96;
+        }
+        &_bold {
+            color: #212c42;
+        }
+    }
+}
+@media (min-width: 960px) and (max-width: 1199px) {
+    .Table {
+      &__cell {
+        justify-content: flex-start;
+        padding-left: 10px;
+      }
+    }
+    .User {
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      height: 107px;
+      &__level {
+        min-width: 65px;
+        max-width: 65px;
+      }
+      &__progress {
+        max-width: 60px;
+        min-width: 60px;
+      }
+      &__userName {
+        min-width: 120px;
+      }
+      &__userId {
+        display: flex;
+        justify-content: center;
+        height: 20px;
+      }
+      &__tariff {
+        min-width: 84px;
+        max-width: 84px;
+      }  
+      
+      &:hover {
+        transition: 0.1s;
+        background-color: rgba(33, 44, 66, 1);
+      }
+      &__contacts {
+        width: 100%;
+        min-width: 90px;
+      }
+      &__subscribe {
+        width: 100%;
+        min-width: 90px;
+      }
+      &__many {
+        width: 100%;
+        min-width: 83px;
+      }
+    }
+  }
+
+
+@media screen and (min-width: 650px) and (max-width: 959px) {
+    .Clients {
+        padding: 8px;
+    }
+    .MiniText {
+        font-size: 12px;
+    }
+
+    .User {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        height: 107px;
+        &__level {
+            min-width: 65px;
+            max-width: 65px;
+        }
+        &__progress {
+            max-width: 60px;
+            min-width: 60px;
+        }
+        &__userName {
+            min-width: 120px;
+        }
+        &__userId {
+            display: flex;
+            justify-content: center;
+            height: 20px;
+        }
+        &__tariff {
+            min-width: 84px;
+            max-width: 84px;
+        }
+
+        &:hover {
+            transition: 0.1s;
+            background-color: rgba(33, 44, 66, 1);
+        }
+        &__contacts {
+            width: 100%;
+            min-width: 90px;
+        }
+        &__subscribe {
+            width: 100%;
+            min-width: 90px;
+        }
+        &__many {
+            width: 100%;
+            min-width: 83px;
+        }
+    }
+}
+@media screen and (max-width: 650px) {
+    .MiniText {
+        font-size: 12px;
+    }
+    .User {
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        height: 107px;
+        &__level {
+            min-width: 65px;
+            max-width: 65px;
+        }
+        &__progress {
+            display: none;
+        }
+        &__userName {
+            min-width: 100px;
+        }
+        &__userId {
+            display: flex;
+            justify-content: center;
+            height: 20px;
+        }
+        &__tariff {
+            min-width: 84px;
+            max-width: 84px;
+        }
+        &__contacts {
+            display: none;
+        }
+        &__subscribe {
+            display: none;
+        }
+        &__many {
+            display: none;
+        }
+    }
+}

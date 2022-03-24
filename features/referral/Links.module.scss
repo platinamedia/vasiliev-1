@@ -1,0 +1,186 @@
+$default_color: #8b97ae;
+$border_blue: #192233;
+$border_liteblue: #6781f7;
+
+.LinkConainer {
+    overflow: hidden;
+    width: 202px;
+}
+
+.Links {
+    width: 100vw;
+}
+
+.InputOptions {
+    padding-right: 50px;
+}
+
+
+.Image {
+    object-fit: cover !important;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+.Landing {
+    width: 100%;
+    margin-bottom: 200px;
+    &__link {
+        margin-top: 20px;
+    }
+}
+
+.Card {
+}
+
+.Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &__play {
+        cursor: pointer;
+        & :hover {
+            transition: 0.2s ease;
+            filter: invert(37%) sepia(85%) saturate(558%) hue-rotate(269deg) brightness(102%) contrast(86%);
+        }
+    }
+}
+
+.Title {
+    margin-top: 40px;
+}
+
+.Grid {
+    width: 100%;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(230px, 1fr));
+    column-gap: 24px;
+    row-gap: 60px;
+}
+
+.Head {
+    height: 50px;
+}
+
+.Copy {
+    padding: 12px;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: $default_color;
+    border: 1px solid $default_color;
+    box-sizing: border-box;
+    justify-content: space-between;
+    border-radius: 4px;
+    max-width: 266px;
+    cursor: pointer;
+}
+
+.ContainImg {
+    padding-right: 6px;
+}
+
+.Constainer_Images {
+    background-color: rgba(25, 34, 51, 1);
+    margin-top: 20px;
+    width: 100%;
+    height: 359px !important;
+    border: 4px solid $border_blue;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    &_position {
+        & img {
+            width: 100% !important;
+            height: 100% !important;
+            min-width: unset !important;
+            min-height: unset !important;
+            max-width: unset !important;
+            max-height: unset !important;
+            box-sizing: border-box !important;
+            border-radius: 20px !important;
+            border: black solid;
+        }
+        & > div {
+            height: 100% !important;
+            position: unset !important;
+        }
+    }
+
+    &:hover {
+        border: 4px solid $border_liteblue;
+        border-radius: 20px;
+        transition: 0.3s ease-in-out;
+    }
+}
+
+.ShareLink {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 186px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    background: #212c42;
+    border: 1px solid $border_liteblue;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 1680px) {
+    .Grid {
+        width: 100%;
+        margin-top: 35px;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(286px, 600px));
+        column-gap: 24px;
+        row-gap: 50px;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .Grid {
+        grid-template-columns: repeat(2, minmax(230px, 350px));
+        row-gap: 50px;
+    }
+    .Constainer_Images {
+        margin-top: 20px;
+    }
+    .Head {
+        height: 40px;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 959px) {
+    .JivoSite {
+        display: none;
+    }
+
+    .Grid {
+        grid-template-columns: repeat(2, minmax(230px, 350px));
+    }
+    .Head {
+        height: 40px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .JivoSite {
+        display: none;
+    }
+    .Grid {
+        grid-template-columns: repeat(1, minmax(230px, 400px));
+        row-gap: 70px;
+    }
+    .Constainer_Images {
+        margin-top: 20px;
+        height: 400px;
+    }
+    .Head {
+        min-height: 30px;
+    }
+}

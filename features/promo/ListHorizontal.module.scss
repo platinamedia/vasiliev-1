@@ -1,0 +1,87 @@
+.ListHorizontal {
+    max-width: 1136px;
+    height: 401px;
+    background: #6e3dc8;
+    box-shadow: 0px 7px 29px #192233;
+    border-radius: 20px;
+    overflow: hidden;
+    &__container {
+        height: 100%;
+        background: url("/images/svg/promo/man.svg") no-repeat;
+        background-size: 620px 440px;
+        background-position: 100% -7px;
+        padding: 40px;
+    }
+    &__header {
+    }
+    &__actual {
+        margin-top: 32px;
+        background: #ffffff;
+        border-radius: 8px;
+        max-width: 340px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text {
+        margin-top: 16px;
+        max-width: 556px;
+        height: 78px;
+        overflow: hidden;
+    }
+    &__about {
+        margin-top: 16px;
+    }
+    &__status {
+        display: flex;
+        margin-top: 25px;
+        gap: 20px;
+    }
+    &__done {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+    &__next {
+    }
+}
+
+.Pink_text {
+    color: #d752aa;
+}
+
+@media (min-width: 651px) and (max-width: 1210px) {
+    .ListHorizontal {
+        &__container {
+            background-size: 420px 340px;
+            background-position: 120% 102px;
+        }
+    }
+}
+
+@media (min-width: 451px) and (max-width: 650px) {
+    .ListHorizontal {
+        &__container {
+            background-size: 320px 240px;
+            background-position: 120% 200px;
+            padding: 12px;
+        }
+        &__status {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ListHorizontal {
+        &__container {
+            background-size: 200px 220px;
+            background-position: 100% 240px;
+            padding: 12px;
+        }
+        &__status {
+            flex-direction: column;
+        }
+    }
+}

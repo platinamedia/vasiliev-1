@@ -1,0 +1,58 @@
+.text_black {
+    color: #212c42;
+    line-height: 20px;
+}
+.text_silver {
+    color: #8b97ae;
+    line-height: 20px;
+}
+
+.label {
+    margin: 2px 0;
+}
+
+.Button__close {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #ffffff;
+    &:active {
+    }
+    &:hover svg path {
+        transition: 1s ease-out;;
+        fill: rgba(0, 0, 0, 0.642);
+    }
+}
+
+.Close {
+    position: relative;
+    &__position {
+        cursor: pointer;
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.Account {
+    width: 361px;
+    height: 270px;
+    background-color: #ffffff;
+    padding: 16px 16px 40px 24px;
+    border-radius: 20px;
+    &__header {
+        margin-top: 50px;
+    }
+    &__message {
+        margin-top: 8px;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+    &__close {
+        width: 250px;
+    }
+}

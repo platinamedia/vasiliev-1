@@ -1,0 +1,60 @@
+.Button_options {
+    width: 105px;
+    height: 36px;
+    padding: 0px;
+    border-radius: 4px;
+    &:hover {
+        border-radius: 4px;
+    }
+}
+.Link_change {
+    width: 153px;
+}
+
+.UserLink {
+    margin-top: 40px;
+    height: 80px;
+    &__container {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        display: flex;
+        align-items: center;
+    }
+    &__copy {
+        border-radius: 50px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -10px;
+        cursor: pointer;
+        &:active {
+            background-color: rgba(99, 99, 99, 0.055);
+        }
+    }
+    &__path_one {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 227px;
+        min-width: 227px;
+    }
+    &__path_two {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 257px;
+        min-width: 257px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .UserLink {
+        height: 120px;   
+        &__container {
+            align-items:flex-start;
+            flex-direction: column;
+        }
+    }
+}

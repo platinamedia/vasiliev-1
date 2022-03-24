@@ -1,0 +1,26 @@
+.ChoiceWindow {
+    margin-top: 34px;
+    display: flex;
+    &__item {
+        margin-right: 26px;
+    }
+}
+
+.RadioButton__options{
+    &_left {
+        width: 135px;
+    }
+    &_right {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .ChoiceWindow {
+        flex-direction: column;
+        &__item {
+            margin-bottom: 12px;
+        }
+    }   
+}
+

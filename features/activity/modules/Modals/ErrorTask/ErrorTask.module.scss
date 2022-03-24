@@ -1,0 +1,42 @@
+.text_black {
+    color: #212c42;
+    line-height: 20px;
+}
+.text_silver {
+    color: #8b97ae;
+    line-height: 20px;
+}
+
+.label {
+    margin: 2px 0;
+}
+.Error {
+    width: 290px;
+    height: 268px;
+    background-color: #EB5757;
+    padding: 28px 20px 24px 20px;
+    border-radius: 15px;
+    &__icon {
+        display: flex;
+        justify-content: center;
+    }
+    &__header {
+        position: relative;
+        margin-top: 24px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__subhead {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    &__btn {
+        margin-top: 30px;
+    }
+    &__close {
+        width: 250px;
+    }
+}

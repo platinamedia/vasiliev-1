@@ -1,0 +1,617 @@
+$color_blue: #6781f7;
+$color_silver: #8b97ae;
+$color_pinc: #d752aa;
+
+.Header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &__play {
+        cursor: pointer;
+    }
+}
+
+.Tariffs {
+    width: 100%;
+    height: 100%;
+    &__options {
+        margin-top: 24px;
+        max-width: 1059px;
+    }
+    &__contract {
+        margin-top: 14px;
+        margin-bottom: 54px;
+        &_text {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+.Table {
+    margin-top: 32px;
+    width: 100%;
+    &__wrapper {
+        width: 100%;
+        max-width: 1200px;
+        background: #192233;
+        border-radius: 16px;
+        display: grid;
+        grid-template-columns: 257px 1fr;
+        grid-template-rows: 109px 1fr;
+        grid-template-areas:
+            "tariff header"
+            "side content";
+    }
+    &__tariff {
+        grid-area: tariff;
+        padding: 27px 21px;
+    }
+    &__header {
+        grid-area: header;
+        display: flex;
+        &_subheader {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__side {
+        grid-area: side;
+    }
+    &__content {
+        grid-area: content;
+        display: flex;
+        flex-grow: 1;
+        margin-top: -1px;
+    }
+}
+
+.BlockSpecial {
+    &_em {
+        font-size: 0.9em;
+    }
+    width: 97px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color_pinc;
+    border-radius: 12px;
+}
+
+.Subheader {
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__content {
+        height: 108px;
+        display: flex;
+        border-left: $color_silver solid 1px;
+        position: relative;
+        &_img {
+            width: 50%;
+            height: 100%;
+            margin-top: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            &_set {
+                position: relative;
+                z-index: 1;
+            }
+            &_filter {
+                position: absolute;
+                max-width: 190px;
+            }
+        }
+        &_value {
+            width: 50%;
+            height: 100%;
+            padding-left: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+    &__value {
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: $color_silver solid 1px;
+        border-left: $color_silver solid 1px;
+    }
+    &__container {
+        border-top: $color_silver solid 1px;
+        display: flex;
+        height: 58px;
+    }
+    &__item {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.Container__desktop {
+    // overflow-x: hidden;
+}
+
+.Content__desktop {
+}
+
+.YourTarrif__true {
+    background-color: #212c42;
+    width: 100%;
+    height: 100%;
+}
+
+.SlideToMobile {
+    &__Header {
+        height: 350px;
+    }
+    &__Box {
+        height: 100%;
+        max-height: 270px;
+    }
+    &__IMG {
+        width: 100%;
+        max-width: 50%;
+        position: relative;
+        padding-left: 10px;
+        &_filter {
+            position: relative;
+            top: 0px;
+            left: 40px;
+            width: 242px;
+            height: 168px;
+        }
+        &_box {
+            position: absolute;
+            z-index: 100;
+            width: 142px;
+            height: 196px;
+            margin-left: -10px;
+        }
+    }
+    &__info {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        max-width: 50%;
+    }
+    &__Body {
+        width: 100%;
+        height: 100%;
+        background-color: #192233;
+        border-radius: 16px;
+    }
+    &__Contener {
+        display: flex;
+        min-height: 220px;
+        flex-grow: 1;
+    }
+}
+
+.TariffsToMobile__Body {
+    display: flex;
+    width: 100%;
+    &_wrapper {
+        width: 100%;
+    }
+    &_Pay {
+        display: none;
+    }
+}
+
+.Info {
+    &__head {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.9rem;
+        line-height: 47px;
+    }
+    &__type {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2rem;
+        line-height: 26px;
+    }
+    &__effects {
+        padding-top: 8px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 20px;
+        color: #d752aa;
+    }
+    &__cost {
+        margin-top: 16px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.9rem;
+        line-height: 47px;
+    }
+    &__valuts {
+        height: 52px;
+    }
+}
+
+.Mobile__Button {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    &_options {
+        display: flex;
+        height: 36px;
+    }
+    &_content {
+        width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.Text_gap {
+    margin-right: 30px;
+}
+.BuyTraffic {
+    display: flex;
+    width: 100%;
+    &_Item {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.InfoUpgrade {
+    background: $color_blue;
+    border-radius: 8px;
+    width: 211px;
+    height: 108px;
+    margin-top: -150px;
+    margin-left: -45px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    justify-content: space-between;
+    :after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 22px;
+        margin-left: -8px;
+        border: 10px solid transparent;
+        border-top: 10px solid $color_blue;
+    }
+}
+
+.BlockSpecial__offer {
+    &_em {
+        font-size: 0.7em;
+    }
+    max-width: 138px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+    background: $color_pinc;
+    border-radius: 12px;
+}
+
+.DefaultNull {
+    min-width: 257px;
+}
+
+.YourTariff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 92px;
+    height: 22px;
+    border: 1px solid $color_silver;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.InfoTariff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+    &_text {
+        margin-left: 5px;
+        color: $color_blue;
+    }
+}
+
+.BoxPositionLavel {
+    &__img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    gap: 4px;
+}
+
+.BlockSpecial {
+    &_em {
+        font-size: 0.9em;
+    }
+    width: 97px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $color_pinc;
+    border-radius: 12px;
+}
+
+.InfoLavel {
+    background: $color_blue;
+    border-radius: 8px;
+    margin-top: -10px;
+    padding-left: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-bottom: 6px;
+    :after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -30px;
+        margin-left: -8px;
+        border: 10px solid transparent;
+        border-top: 10px solid $color_blue;
+        transform: rotate(180deg);
+    }
+    &_Row {
+        margin-bottom: 10px;
+        display: flex;
+        padding-left: 2px;
+    }
+}
+
+.TariffsList__desktop {
+    display: flex;
+    width: 100%;
+    & li {
+        border-left: $color_silver solid 1px;
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+    }
+}
+
+.Btn_options {
+    padding: 0px;
+}
+
+.TariffsList {
+    &__list {
+        width: 100%;
+        height: 100%;
+    }
+    &__item {
+        min-height: 52px;
+        display: flex;
+        align-items: center;
+        border-top: $color_silver solid 1px;
+        justify-content: center;
+        &_start {
+            min-height: 52px;
+            display: flex;
+            align-items: center;
+            border-top: $color_silver solid 1px;
+            justify-content: center;
+        }
+        &_buy {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            border-top: $color_silver solid 1px;
+            justify-content: center;
+        }
+        &_balance {
+            width: 100%;
+            max-width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &_mobile {
+            display: none;
+        }
+    }
+    &__item_offer {
+        width: 100%;
+        height: 100%;
+        margin-top: -5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+}
+
+.TariffsList__tablet {
+    display: none;
+}
+
+.TariffsList__mobile {
+    display: none;
+}
+
+@media (min-width: 650px) and (max-width: 1199px) {
+    .Table {
+        &__wrapper {
+            grid-template-columns: 257px 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "side content";
+        }
+        &__tariff {
+            display: none;
+        }
+        &__header {
+            display: none;
+        }
+    }
+    .Subheader {
+        display: none;
+    }
+    .TariffsList {
+        &__item {
+            &_start {
+                border-top: none;
+            }
+        }
+        &__tablet {
+            display: flex;
+            width: 100%;
+            & li {
+                border-left: $color_silver solid 1px;
+                display: flex;
+                flex-grow: 1;
+                width: 100%;
+            }
+        }
+        &__mobile {
+            display: none;
+        }
+    }
+    .InfoUpgrade {
+        margin-left: -20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .Visible_desctop {
+        display: none;
+    }
+    .Container__desktop {
+        display: none;
+    }
+    .TariffsToMobile__Body {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        &_wrapper {
+            max-width: 95%;
+            background-color: #192233;
+            border-radius: 16px;
+            margin: 0px;
+            margin-bottom: 52px;
+        }
+        &_Pay {
+            display: flex;
+            justify-content: center;
+            & button {
+                width: 95%;
+            }
+        }
+    }
+    .TariffsList__desktop {
+        display: none;
+    }
+    .TariffsList__tablet {
+        display: none;
+    }
+    .TariffsList__mobile {
+        display: block;
+    }
+    .TariffsList__item_mobile {
+        display: block;
+        width: 100%;
+    }
+    .TariffsList {
+        &__item {
+            &_balance {
+                width: 100%;
+                display: flex;
+                padding: 0 8px;
+                justify-content: center;
+                padding: 20px;
+                align-items: center;
+            }
+            &_row {
+                width: 100%;
+                display: flex;
+                padding: 0 8px;
+            }
+            &_start {
+                border-top: none;
+            }
+            &_end {
+                border-left: none;
+                display: none;
+            }
+            &_buy {
+                display: none;
+            }
+            &_point {
+                display: flex;
+                justify-content: flex-end;
+                min-width: 95px;
+            }
+            &_noline {
+                border-bottom: none;
+                border-left: none;
+            }
+        }
+    }
+    .InfoUpgrade {
+        background: $color_blue;
+        border-radius: 8px;
+        width: 211px;
+        height: 108px;
+        margin-top: -170px;
+        margin-left: 120px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        justify-content: space-between;
+        :after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 43px;
+            margin-left: -8px;
+            border: 10px solid transparent;
+            border-top: 10px solid $color_blue;
+        }
+    }
+}

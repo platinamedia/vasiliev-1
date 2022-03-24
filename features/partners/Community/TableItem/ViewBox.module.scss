@@ -1,0 +1,69 @@
+.ViewBox {
+  transition: 1s;
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+  }
+  &__user {
+    background-color: #fff;
+    min-height: 121px;
+    border-bottom: 1px solid var(--grey);
+    &_img {
+    }
+    &_name {
+      color: var(--background-alt);
+    }
+  }
+  &__true {
+    height: 100%;
+    background-color: #fff;
+  }
+
+  &__info {
+    height: 50%;
+    max-height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    &_row {
+      height: 22px;
+    }
+    &_IMG {
+      height: 35px;
+      width: 35px;
+      min-width: 35px;
+      border-radius: 50px;
+      overflow: hidden;
+    }
+    &_Reg {
+      min-width: 119px;
+      width: 119px;
+    }
+    &_Vis {
+      min-width: 115px;
+      width: 115px;
+    }
+    &_Act {
+      min-width: 72px;
+      width: 72px;
+    }
+    &_Prt {
+      min-width: 71px;
+      width: 71px;
+    }
+    &_Lvl {
+      min-width: 128px;
+      width: 178px;
+    }
+  }
+  &__connect {
+    padding: 15px;
+
+    height: 50%;
+    max-height: 50%;
+  }
+}
